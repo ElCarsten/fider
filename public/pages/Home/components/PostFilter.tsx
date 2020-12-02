@@ -19,14 +19,14 @@ export const PostFilter = (props: PostFilterProps) => {
   };
 
   const options: DropDownItem[] = [
-    { value: "trending", label: "Trending" },
-    { value: "recent", label: "Recent" },
-    { value: "most-wanted", label: "Most Wanted" },
-    { value: "most-discussed", label: "Most Discussed" }
+    { value: "trending", label: "Im Trend" },
+    { value: "recent", label: "Neuste" },
+    { value: "most-wanted", label: "Meistgefragt" },
+    { value: "most-discussed", label: "Meist diskutierte" }
   ];
 
   if (fider.session.isAuthenticated) {
-    options.push({ value: "my-votes", label: "My Votes" });
+    options.push({ value: "my-votes", label: "Meine Stimmen" });
   }
 
   PostStatus.All.filter(s => s.filterable && props.countPerStatus[s.value]).forEach(s => {

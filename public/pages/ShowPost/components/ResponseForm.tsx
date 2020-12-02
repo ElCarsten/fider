@@ -67,7 +67,7 @@ export class ResponseForm extends React.Component<ResponseFormProps, ResponseFor
   public render() {
     const button = (
       <Button className="respond" fluid={true} onClick={this.showModal}>
-        <FaBullhorn /> Respond
+        <FaBullhorn /> Antworten
       </Button>
     );
 

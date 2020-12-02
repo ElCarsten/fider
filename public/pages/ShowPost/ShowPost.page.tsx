@@ -119,7 +119,7 @@ export default class ShowPostPage extends React.Component<ShowPostPageProps, Sho
             </ListItem>
           </List>
 
-          <span className="subtitle">Description</span>
+          <span className="subtitle">Beschreibung</span>
           {this.state.editMode ? (
             <Form error={this.state.error}>
               <TextArea field="description" value={this.state.newDescription} onChange={this.setNewDescription} />
@@ -148,18 +148,18 @@ export default class ShowPostPage extends React.Component<ShowPostPageProps, Sho
           {Fider.session.isAuthenticated &&
             Fider.session.user.isCollaborator && [
               <span key={0} className="subtitle">
-                Actions
+                Aktionen
               </span>,
               this.state.editMode ? (
                 <List key={1}>
                   <ListItem>
                     <Button className="save" color="positive" fluid={true} onClick={this.saveChanges}>
-                      <FaSave /> Save
+                      <FaSave /> Speichern
                     </Button>
                   </ListItem>
                   <ListItem>
                     <Button className="cancel" fluid={true} onClick={this.cancelEdit}>
-                      <FaTimes /> Cancel
+                      <FaTimes /> Abbrechen
                     </Button>
                   </ListItem>
                 </List>
@@ -167,7 +167,7 @@ export default class ShowPostPage extends React.Component<ShowPostPageProps, Sho
                 <List key={1}>
                   <ListItem>
                     <Button className="edit" fluid={true} onClick={this.startEdit}>
-                      <FaEdit /> Edit
+                      <FaEdit /> Bearbeiten
                     </Button>
                   </ListItem>
                   <ListItem>
