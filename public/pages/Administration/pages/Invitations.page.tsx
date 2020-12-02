@@ -28,16 +28,16 @@ export default class InvitationsPage extends AdminBasePage<{}, InvitationsPageSt
       subject: `Teile Deine Ideen und Gedanken mit über Split mit uns.`,
       message: `Hi,
 
-      Bei **Split** nehmen wir Feedback sehr ernst, weshalb wir einen Raum geschaffen haben, in dem Du abstimmen, diskutieren und Deine Ideen und Gedanken zu unseren Produkten und Dienstleistungen mitteilen kannst.
+Bei **Split** nehmen wir Feedback sehr ernst, weshalb wir einen Raum geschaffen haben, in dem Du abstimmen, diskutieren und Deine Ideen und Gedanken zu unseren Produkten und Dienstleistungen mitteilen kannst.
       
-      Wir möchten Dich einladen, dieser Gemeinschaft beizutreten und Themen anzusprechen, die Dir wichtig sind!
+Wir möchten Dich einladen, dieser Gemeinschaft beizutreten und Themen anzusprechen, die Dir wichtig sind!
       
-      Klicke auf den Link unten, um beizutreten.
+Klicke auf den Link unten, um beizutreten.
       
-      %invite%
+%invite%
       
-      Mit freundlichen Grüßen,
-      Carsten Bock (CTO - Split)`,
+Mit freundlichen Grüßen,
+Carsten Bock (CTO - Split)`,
       recipients: [],
       numOfRecipients: 0,
       rawRecipients: ""
