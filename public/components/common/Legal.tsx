@@ -11,8 +11,8 @@ export const TermsOfService: React.FunctionComponent<{}> = () => {
 
   if (fider.settings.hasLegal) {
     return (
-      <a href="/terms" target="_blank">
-        Terms of Service
+      <a href="https://gastro.split-app.de/tos" target="_blank">
+        AGB's
       </a>
     );
   }
@@ -24,8 +24,8 @@ export const PrivacyPolicy: React.FunctionComponent<{}> = () => {
 
   if (fider.settings.hasLegal) {
     return (
-      <a href="/privacy" target="_blank">
-        Privacy Policy
+      <a href="https://gastro.split-app.de/privacy" target="_blank">
+        Datenschutzerklärung
       </a>
     );
   }
@@ -38,7 +38,7 @@ export const LegalNotice: React.FunctionComponent<{}> = () => {
   if (fider.settings.hasLegal) {
     return (
       <p className="info">
-        By signing in, you agree to the <PrivacyPolicy /> and <TermsOfService />.
+        Wenn Du Dich anmeldest aktzeptierst Du unsere <PrivacyPolicy /> und <TermsOfService />.
       </p>
     );
   }

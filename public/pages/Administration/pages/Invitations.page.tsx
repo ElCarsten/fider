@@ -25,19 +25,19 @@ export default class InvitationsPage extends AdminBasePage<{}, InvitationsPageSt
     super(props);
 
     this.state = {
-      subject: `Share your ideas and thoughts about ${Fider.session.tenant.name}`,
+      subject: `Teile Deine Ideen und Gedanken mit über Split mit uns.`,
       message: `Hi,
 
-At **${Fider.session.tenant.name}** we take feedback very seriously, which is why we've launched a space where you can vote, discuss and share your ideas and thoughts about our products and services.
-
-We'd like to extend an invite for you to join this community and raise awareness on topics you care about!
-
-To join, click on the link below.
-
-%invite%
-
-Regards,
-${Fider.session.user.name} (${Fider.session.tenant.name})`,
+      Bei **Split** nehmen wir Feedback sehr ernst, weshalb wir einen Raum geschaffen haben, in dem Du abstimmen, diskutieren und Deine Ideen und Gedanken zu unseren Produkten und Dienstleistungen mitteilen kannst.
+      
+      Wir möchten Dich einladen, dieser Gemeinschaft beizutreten und Themen anzusprechen, die Dir wichtig sind!
+      
+      Klicke auf den Link unten, um beizutreten.
+      
+      %invite%
+      
+      Mit freundlichen Grüßen,
+      Carsten Bock (CTO - Split)`,
       recipients: [],
       numOfRecipients: 0,
       rawRecipients: ""

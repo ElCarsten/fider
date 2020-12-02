@@ -66,17 +66,17 @@ export const SignInControl: React.FunctionComponent<SignInControlProps> = props 
 
       {props.useEmail && (
         <div className="l-signin-email">
-          <p>Enter your email address to sign in</p>
+          <p>Gib Deine Email-Adresse an, um Dich anzumelden.</p>
           <Form error={error}>
             <Input
               field="email"
               value={email}
               autoFocus={!device.isTouch()}
               onChange={setEmail}
-              placeholder="yourname@example.com"
+              placeholder="deinname@beispiel.de"
               suffix={
                 <Button type="submit" color="positive" disabled={email === ""} onClick={signIn}>
-                  Sign in
+                  Anmelden
                 </Button>
               }
             />
