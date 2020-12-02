@@ -70,7 +70,7 @@ export const CommentInput = (props: CommentInputProps) => {
             <>
               <MultiImageUploader field="attachments" maxUploads={2} previewMaxWidth={100} onChange={setAttachments} />
               <Button color="positive" onClick={submit}>
-                Submit
+                Senden
               </Button>
             </>
           )}
